@@ -8,10 +8,10 @@ For details on how to download and get started with Symfony, see the
 Installation ?
 --------------
  
-  Installaion FTP server
+  Installaion FTP server:
   * [**Ftp aws**][14]
   
-  Installaion FTP Client config 
+  Installaion FTP Client  and configuration: 
   * [**Ftp Client**][15]
   * [**Ftp  permission denied**][16]
   
