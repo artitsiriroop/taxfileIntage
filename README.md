@@ -8,7 +8,8 @@ For details on how to download and get started with Symfony, see the
 Installation ?
 --------------
 
-  * [**Ftp aws**][7]
+  * [**Ftp aws**][14]
+  * [**Ftp Client**][15]
 
 The Symfony Standard Edition is configured with the following defaults:
 
@@ -69,3 +70,4 @@ Enjoy!
 [12]: https://symfony.com/doc/3.2/assetic/asset_management.html
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 [14]: https://silicondales.com/tutorials/aws-ec2-tutorials/setup-ftp-sftp-aws-ec2-instance/
+[15]: https://www.youtube.com/watch?v=e9BDvg42-JI
