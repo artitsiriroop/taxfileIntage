@@ -10,6 +10,8 @@ Installation ?
 
   * [**Ftp aws**][14]
   * [**Ftp Client**][15]
+  * [**Ftp  permission denied**][16]
+  
 
 The Symfony Standard Edition is configured with the following defaults:
 
@@ -71,3 +73,4 @@ Enjoy!
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 [14]: https://silicondales.com/tutorials/aws-ec2-tutorials/setup-ftp-sftp-aws-ec2-instance/
 [15]: https://www.youtube.com/watch?v=e9BDvg42-JI
+[16]: https://stackoverflow.com/questions/19648712/amazon-aws-filezilla-transfer-permission-denied
