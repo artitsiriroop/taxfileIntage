@@ -1,0 +1,9 @@
+
+{% block user_block %}
+    {% if app.user %}
+        {{ app.user }}
+        <a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>
+    {% endif %}
+    <a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>
+
+{% endblock %}

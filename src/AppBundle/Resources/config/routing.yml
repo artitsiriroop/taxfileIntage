@@ -1,0 +1,4 @@
+app_prefix_update:
+    resource: "@AppBundle/Resources/config/routing/m_employee.yml"
+    prefix:   /prefix/update
+

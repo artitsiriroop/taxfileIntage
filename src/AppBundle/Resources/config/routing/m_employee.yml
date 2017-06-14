@@ -1,0 +1,24 @@
+prefix_update_index:
+    path:     /
+    defaults: { _controller: "AppBundle:m_employee:index" }
+    methods:  GET
+
+prefix_update_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:m_employee:show" }
+    methods:  GET
+
+prefix_update_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:m_employee:new" }
+    methods:  [GET, POST]
+
+prefix_update_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:m_employee:edit" }
+    methods:  [GET, POST]
+
+prefix_update_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:m_employee:delete" }
+    methods:  DELETE

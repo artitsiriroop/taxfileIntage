@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>M_employee</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ m_employee.id }}</td>
+            </tr>
+            <tr>
+                <th>Empcode</th>
+                <td>{{ m_employee.empCode }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ m_employee.name }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ m_employee.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{% if m_employee.createdat %}{{ m_employee.createdat|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Modified_at</th>
+                <td>{% if m_employee.modifiedat %}{{ m_employee.modifiedat|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('prefix_update_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('prefix_update_edit', { 'id': m_employee.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

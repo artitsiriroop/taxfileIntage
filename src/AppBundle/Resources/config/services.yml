@@ -1,0 +1,9 @@
+services:
+    app.admin.video:
+        class: AppBundle\Admin\VideoAdmin
+        arguments: [~, AppBundle\Entity\Video, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Video }
+    admin.employee:
+        class: AppBundle\Admin\m_employeeAdmin
+        arguments: [~, AppBundle\Entity\m_employee, ~]

@@ -1,0 +1,531 @@
+{% extends "@User/DashboardTemplate.html.twig" %}
+{%  block robbon %}
+    <div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li><li>adding Employee</li>
+        </ol>
+
+    </div>
+{%  endblock %}
+
+ {% block maincontent %}
+     <div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-2" data-widget-editbutton="false">
+                 <!-- widget options:
+                 usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false"
+                 data-widget-togglebutton="false"
+                 data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false"
+                 data-widget-custombutton="false"
+                 data-widget-collapsed="true"
+                 data-widget-sortable="false"
+
+                 -->
+                 <header>
+                     <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                     <h2>Hide / Show Columns </h2>
+
+                 </header>
+
+                 <!-- widget div-->
+                 <div>
+
+                     <!-- widget edit box -->
+                     <div class="jarviswidget-editbox">
+                         <!-- This area used as dropdown edit box -->
+
+                     </div>
+                     <!-- end widget edit box -->
+
+                     <!-- widget content -->
+                     <div class="widget-body no-padding">
+
+                         <article class="col-sm-12 col-md-12 col-lg-12">
+                             <div class="jarviswidget" id="wid-id-3" data-widget-editbutton="false" data-widget-custombutton="false">
+                                 <!-- widget options:
+                                     usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                                     data-widget-colorbutton="false"
+                                     data-widget-editbutton="false"
+                                     data-widget-togglebutton="false"
+                                     data-widget-deletebutton="false"
+                                     data-widget-fullscreenbutton="false"
+                                     data-widget-custombutton="false"
+                                     data-widget-collapsed="true"
+                                     data-widget-sortable="false"
+
+                                 -->
+                                 <header>
+                                     <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                                     <h2>Registration form </h2>
+
+                                 </header>
+
+                                 <!-- widget div-->
+                                 <div>
+
+                                     <!-- widget edit box -->
+                                     <div class="jarviswidget-editbox">
+                                         <!-- This area used as dropdown edit box -->
+
+                                     </div>
+                                     <!-- end widget edit box -->
+
+                                     <!-- widget content -->
+                                     <div class="widget-body no-padding">
+                                         {{ form_start(form,{'name':'add_new', 'method': 'POST','attr': {'class': 'smart-form','novalidate':'novalidate'}}) }}
+
+
+                                         <header>
+
+                                         </header>
+
+                                         <fieldset>
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         empcode <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input">
+                                                         <i class="icon-append fa fa-user"></i>
+
+                                                         {{ form_widget(form.empCode,{'attr': {'placeholder': 'emplpoyee code'}}) }}
+
+                                                         <!--<input type="text" name="name" placeholder="Name">-->
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-1">
+                                                     <label>
+
+                                                         status <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-2">
+                                                     <label class="select">
+                                                         {{ form_widget(form.enabled,{'attr': {'placeholder': 'Role'}}) }}
+
+
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-1">
+                                                     <label>
+
+                                                         Roles <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-2">
+                                                     <label class="selected select-multiple">
+                                                         {{ form_widget(form.roles,{'attr': {'placeholder': 'Role'}}) }}
+
+
+                                                     </label>
+
+                                                 </section>
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label >
+
+                                                         username <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input">
+                                                         <i class="icon-append fa fa-user"></i>
+
+                                                         {{ form_widget(form.username,{'attr': {'placeholder': 'username'}}) }}
+
+                                                         <!--<input type="text" name="name" placeholder="Name">-->
+                                                     </label>
+                                                 </section>
+
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         password <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                         {{ form_widget(form.password,{'attr': {'placeholder': 'password'}}) }}
+
+                                                     </label>
+                                                 </section>
+                                             </div>
+
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         name <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                         {{ form_widget(form.name,{'attr': {'placeholder': 'name'}}) }}
+
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         lastname <span style="color: red;float: left">*</span>
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                         {{ form_widget(form.lastname,{'attr': {'placeholder': 'lastname'}}) }}
+
+
+                                                     </label>
+                                                 </section>
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         email
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                         {{ form_widget(form.email,{'attr': {'placeholder': 'email'}}) }}
+
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         telephoneNo
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                         {{ form_widget(form.telephoneNo,{'attr': {'placeholder': 'telephoneNo'}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+                                                         ที่อยู่
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="input">
+                                                         <input id='addressAuto' type="text" name="lname" placeholder="ที่อยู่">
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         address1
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="input">
+                                                         {{ form_widget(form.address1,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         address2
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="input">
+                                                         {{ form_widget(form.address2,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         ตำบล
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="select">
+                                                         {{ form_widget(form.subDisCode,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         อำเภอ
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="select">
+                                                         {{ form_widget(form.disCode,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         จังหวัด
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-10">
+                                                     <label class="select">
+                                                         {{ form_widget(form.prvCode,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+
+
+
+                                             </div>
+
+                                             <div class="row">
+                                                 <section class="col col-2">
+                                                     <label>
+
+                                                         รหัสไปรษณีย์
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-4">
+                                                     <label class="input">
+                                                         {{ form_widget(form.zipCode,{'attr': {'placeholder': ''}}) }}
+
+                                                     </label>
+                                                 </section>
+                                                 <section class="col col-6">
+
+                                                 </section>
+
+
+
+                                             </div>
+
+                                         </fieldset>
+
+
+                                         <footer>
+                                             <button type="button" class="btn btn-primary"  id="submitBtn">
+                                                 Submit
+                                             </button>
+                                         </footer>
+
+
+
+
+                                         {{ form_end(form) }}
+
+                                     </div>
+                                     <!-- end widget content -->
+
+                                 </div>
+                                 <!-- end widget div -->
+
+                             </div>
+                         </article>
+
+
+                     </div>
+                     <!-- end widget content -->
+
+                 </div>
+                 <!-- end widget div -->
+
+             </div>
+         </div>
+     </div>
+
+
+ {% endblock %}
+
+
+{% block javascripts %}
+
+    <script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('HTML_Full_Version/js/plugin/pace/pace.min.js') }}"></script>
+
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-2.1.1.min.js') }}"><\/script>');
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-ui-1.10.3.min.js') }}"><\/script>');
+        }
+    </script>
+    {% javascripts
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jQuery-Autocomplete-master/src/jquery.autocomplete.js'
+    '@UserBundle/Resources/public/assets/js/page.js'
+    '@UserBundle/Resources/public/assets/js/form_unit.js'
+    %}
+    <script src= "{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+        $(document).ready(function() {
+
+
+
+            var availableTags=[];
+            {% for entity in zip %}
+            availableTags.push('{{ entity.subDisNameTh }}'+','+'{{ entity.disNameTh }}'+','+'{{ entity.prvNameTh }}'+','+'{{ entity.zipCode }}');
+            {% endfor %}
+
+
+
+
+            $('#addressAuto').autocomplete({
+                source:availableTags,
+                selectFirst: true, //here
+                minLength: 5,
+                select: function( event, ui ) {
+                    console.log( ui.item ?
+                        "Selected: " + ui.item.value + " aka " + ui.item.id ://this throw undefined
+                        "Nothing selected, input was " + this.value );
+
+                    //alert(ui.item.value);
+                    var arrayVal=ui.item.value.split(',');
+                    var subDisNamth=arrayVal[0];
+                    var disNameTh=arrayVal[1];
+                    var prvNameTh=arrayVal[2];
+                    var zipcode=arrayVal[3];
+
+                    //  $('#form_prvCode').
+                    $("#form_prvCode option").filter(function() {
+                        return this.text == prvNameTh;
+                    }).attr('selected', true);
+                    $("#form_disCode option").filter(function() {
+                        return this.text == disNameTh;
+                    }).attr('selected', true);
+                    $("#form_subDisCode option").filter(function() {
+                        return this.text == subDisNamth;
+                    }).attr('selected', true);
+                    $('#form_zipCode').val(zipcode);
+                }
+            });
+
+
+
+        });
+
+    </script>
+
+    <!-- Your GOOGLE ANALYTICS CODE Below -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+
+
+    </script>
+
+
+{% endblock %}

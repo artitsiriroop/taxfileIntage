@@ -1,0 +1,99 @@
+{% extends "@User/userExtension.html.twig" %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-12 col-lg-4 col-lg-push-4 col-lg-pull-4">
+
+            <center>
+
+                <h1>AGREEMENT</h1>
+
+            </center>
+
+        </div>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-8 col-lg-push-2 col-lg-pull-2">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut velit ac diam euismod scelerisque sit amet sed turpis. Quisque risus risus, mattis sit amet justo ut, mollis lobortis orci. Vivamus mollis velit sit amet posuere consequat. Cras in massa ante. Pellentesque lectus elit, efficitur bibendum nulla suscipit, condimentum volutpat diam. Integer elementum lacinia massa ut rhoncus. Nunc euismod fermentum ex non consequat.
+
+            Sed tempus diam leo. Integer luctus sit amet lacus vel pharetra. Nunc non nibh in enim posuere sollicitudin. Fusce ut arcu tortor. Vestibulum non eros ac odio gravida accumsan. Nam facilisis leo sed dolor consectetur semper. Curabitur ultricies euismod nisi at porta.
+
+            In risus mi, condimentum id pretium vitae, consequat eget metus. Proin felis tortor, eleifend eu faucibus id, sodales id sapien. Donec ac venenatis lectus, non venenatis ante. Etiam dignissim commodo eros, eu mollis dui consectetur vel. Mauris bibendum, turpis in condimentum congue, felis ex varius turpis, ut tristique mi felis sed nisl. Morbi cursus libero a ante elementum scelerisque. Mauris aliquet sapien eu nisl varius tincidunt.
+
+            Vivamus egestas fermentum dolor, vitae cursus libero facilisis eget. Suspendisse commodo mattis ipsum, ac dignissim lorem interdum sit amet. Vivamus tellus massa, dictum quis lectus at, pretium euismod diam. Maecenas luctus tempus dui, at ullamcorper felis egestas eget. Aenean tincidunt condimentum lacinia. Integer at tempus nibh. In et porta lectus, sit amet aliquam augue. Etiam cursus vel nisi a porttitor. Fusce arcu diam, dapibus sed magna a, dignissim lobortis enim. Vestibulum consequat nisi at congue pellentesque. Donec sed accumsan arcu. Proin est quam, accumsan id arcu id, mattis egestas erat. Nunc tortor est, semper at nisl non, rutrum sagittis enim. Donec sed mi eu nulla maximus mollis in eu neque. Vivamus quis cursus ante. Suspendisse sed bibendum ligula, vitae efficitur arcu.
+
+            Proin rutrum, lectus eu tristique volutpat, diam sem venenatis arcu, maximus consectetur augue odio ac augue. Ut vehicula scelerisque sodales. Sed efficitur, nulla id iaculis bibendum, ex orci sodales neque, nec ultricies tortor mauris cursus magna. Nullam nec congue elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam tortor risus, vestibulum tempor eros quis, congue dignissim dolor. Nulla quis rhoncus elit, nec sagittis dolor. Aliquam dignissim sem feugiat pellentesque lacinia. Aliquam erat volutpat. Donec tempor efficitur arcu, dictum egestas lorem volutpat in. Etiam venenatis nisi et euismod faucibus. Cras mattis ut est id condimentum. Mauris dictum quam enim, vel blandit tellus laoreet a. In justo sapien, scelerisque lobortis viverra sit amet, porttitor sed eros. Donec arcu massa, luctus eu neque a, cursus sollicitudin felis.
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <center>
+            <a class="btn btn-default" href="{{ path('fos_user_security_login') }}">Default</a>
+
+        </center>
+
+
+
+
+    </div>
+
+
+    <script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('HTML_Full_Version/js/plugin/pace/pace.min.js') }}"></script>
+
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>#}
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-2.1.1.min.js') }}"><\/script>');
+        }
+    </script>
+
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>#}
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-ui-1.10.3.min.js') }}"><\/script>');
+        }
+    </script>
+    {% javascripts
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jQuery-Autocomplete-master/src/jquery.autocomplete.js'
+    '@UserBundle/Resources/public/assets/js/page.js'
+    '@UserBundle/Resources/public/assets/js/form_unit.js'
+    %}
+    <script src= "{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
+
+
+
+
+
+{% endblock %}

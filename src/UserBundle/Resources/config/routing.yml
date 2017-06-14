@@ -1,0 +1,92 @@
+user_homepage:
+    path:  /index
+    defaults: { _controller: UserBundle:Default:index }
+view_files:
+    path:  /view_files/{id}
+    defaults: { _controller: UserBundle:Default:viewFile }
+register_route:
+    path:  /registration
+    defaults: { _controller: UserBundle:Default:register }
+download_route:
+    path:  /download/{id}
+    defaults: { _controller: UserBundle:Default:download }
+
+
+
+
+
+user_dashboard:
+    path:     /admin_index
+    defaults: { _controller: UserBundle:Dashboard:dashboard }
+
+
+admin_depart_index:
+    path:     /admin_setting_department_index
+    defaults: { _controller: UserBundle:Setting:settingDepartmentIndex }
+
+
+
+admin_setting:
+    path:     /admin_setting
+    defaults: { _controller: UserBundle:Setting:settingEmpIndex }
+admin_emp_add:
+    path:     /admin_setting_emp_add
+    defaults: { _controller: UserBundle:Setting:settingEmpAdd }
+admin_emp_edit:
+    path:     /admin_setting_emp_edit/{id}
+    defaults: { _controller: UserBundle:Setting:settingEmpEdit }
+admin_emp_delete:
+    path:     /admin_setting_emp_delete/{id}
+    defaults: { _controller: UserBundle:Setting:settingEmpDelete }
+admin_emp_import:
+    path:     /admin_emp_import
+    defaults: { _controller: UserBundle:Setting:settingEmpImport }
+admin_emp_import_excel_respond:
+    path:     /admin_emp_import_excel_respond
+    defaults: { _controller: UserBundle:Setting:settingEmpImportExcelRespond }
+
+
+
+
+
+
+upload_file_index:
+    path:     /upload_file_index
+    defaults: { _controller: UserBundle:settingUploadFile:index }
+upload_file_setting:
+    path:     /upload_file_setting
+    defaults: { _controller: UserBundle:settingUploadFile:new }
+
+upload_file_delete:
+    path: /upload_file_delete/{id}
+    defaults: { _controller: UserBundle:settingUploadFile:delete }
+
+upload_file_documet_detail:
+    path:     /upload_file_documet_detail/{id}
+    defaults: { _controller: UserBundle:settingUploadFile:viewDocDetail }
+
+
+
+
+
+
+
+zip_autocomplete:
+    path:     /zip_autocomplete
+    defaults: { _controller: UserBundle:Setting:autocomplete }
+
+
+
+
+
+admin_add:
+    path:     /admin_add
+    defaults: { _controller: UserBundle:Setting:add }
+logout:
+    path: /logout
+    defaults: { _controller: UserBundle:Logout:logout }
+
+update_emp_activation:
+  path:     /update_emp_activation
+  defaults: { _controller: UserBundle:Setting:empActivation}
+

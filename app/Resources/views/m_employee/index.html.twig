@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>M_employees list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Empcode</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Created_at</th>
+                <th>Modified_at</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for m_employee in m_employees %}
+            <tr>
+                <td><a href="{{ path('prefix_update_show', { 'id': m_employee.id }) }}">{{ m_employee.id }}</a></td>
+                <td>{{ m_employee.empCode }}</td>
+                <td>{{ m_employee.name }}</td>
+                <td>{{ m_employee.lastname }}</td>
+                <td>{% if m_employee.createdat %}{{ m_employee.createdat|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if m_employee.modifiedat %}{{ m_employee.modifiedat|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('prefix_update_show', { 'id': m_employee.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('prefix_update_edit', { 'id': m_employee.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('prefix_update_new') }}">Create a new m_employee</a>
+        </li>
+    </ul>
+{% endblock %}

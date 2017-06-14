@@ -1,0 +1,289 @@
+
+
+{% extends "@User/DashboardTemplate.html.twig" %}
+{%  block robbon %}
+    <div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>Home</li><li>adding Employee</li>
+        </ol>
+
+    </div>
+{%  endblock %}
+
+ {% block maincontent %}
+     <div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-2" data-widget-editbutton="false">
+                 <header>
+                     <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                     <h2>Hide / Show Columns </h2>
+
+                 </header>
+
+                 <!-- widget div-->
+                 <div>
+
+                     <!-- widget edit box -->
+                     <div class="jarviswidget-editbox">
+                         <!-- This area used as dropdown edit box -->
+
+                     </div>
+                     <!-- end widget edit box -->
+
+                     <!-- widget content -->
+                     <div class="widget-body no-padding">
+
+                         <article class="col-sm-12 col-md-12 col-lg-12">
+                             <div class="jarviswidget" id="wid-id-3" data-widget-editbutton="false" data-widget-custombutton="false">
+                                 <header>
+                                     <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                                     <h2>upload form </h2>
+
+                                 </header>
+
+                                 <!-- widget div-->
+                                 <div>
+
+                                     <!-- widget edit box -->
+                                     <div class="jarviswidget-editbox">
+                                         <!-- This area used as dropdown edit box -->
+
+                                     </div>
+                                     <!-- end widget edit box -->
+
+                                     <!-- widget content -->
+                                     <div class="widget-body no-padding">
+
+                                         <div  id="progress-bar" class="progress progress-sm progress-striped active" style="display: none">
+                                             <div class="progress-bar bg-color-darken" role="progressbar" style="width: 100%"></div>
+                                         </div>
+
+                                         <h1>   </h1>
+                                         <br>
+
+                                          {{ form_start(form) }}
+
+                                         <table style="width:25%">
+                                             <tr>
+                                                 <td>  {{ form_widget(form.uploadLocation)}}</td>
+                                                 <td>  {{ form_widget(form.docYear) }}</td>
+                                                 <td>  {{ form_widget(form.save,{'attr': {'id': 'saveBtn'}}) }}</td>
+                                             </tr>
+
+                                         </table>
+
+
+
+
+
+
+                                         {{ form_end(form) }}
+
+
+
+                                         </form>
+
+                                     </div>
+
+
+
+
+                                     <!-- end widget content -->
+
+                                 </div>
+                                 <!-- end widget div -->
+
+                             </div>
+
+                             <table id="datatable_col_reorder" class="table table-striped table-bordered table-hover" width="100%">
+
+
+                             </table>
+
+
+
+
+                         </article>
+
+
+                     </div>
+                     <!-- end widget content -->
+
+                 </div>
+                 <!-- end widget div -->
+
+             </div>
+         </div>
+     </div>
+
+
+ {% endblock %}
+
+
+{% block javascripts %}
+    <script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('HTML_Full_Version/js/plugin/pace/pace.min.js') }}"></script>
+
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>#}
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-2.1.1.min.js') }}"><\/script>');
+        }
+    </script>
+
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>#}
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-ui-1.10.3.min.js') }}"><\/script>');
+        }
+    </script>
+
+
+
+
+    {% javascripts
+    '@UserBundle/Resources/public/assets/js/plugin/jquery/jquery.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-ui/jquery-ui.min.js'
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jQuery-Autocomplete-master/src/jquery.autocomplete.js'
+    '@UserBundle/Resources/public/assets/js/form_unit.js'
+    %}
+    <script src= "{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
+    <!--
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/smart-chat-ui/smart.chat.ui.min.js'
+    '@UserBundle/Resources/public/assets/js/smart-chat-ui/smart.chat.manager.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.cust.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.resize.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.time.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.tooltip.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jQuery-Autocomplete-master/src/jquery.autocomplete.js'
+    '@UserBundle/Resources/public/assets/js/form_unit.js'
+    -->
+
+
+    <script type="text/javascript">
+
+        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+        /*$(document).ready(function() {
+
+
+            $('#submitBtn').on('click', function() {
+                var file_data = $('#filepicker').prop('files')[0];
+                var form_data = new FormData();
+                form_data.append('file', file_data);
+                $.ajax({
+                    url: '{asset('uploads/upload.php') }', // point to server-side PHP script
+                    dataType: 'text',  // what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: {form_data:form_data},
+                    type: 'post',
+                    success: function(php_script_response){
+                        console.log(php_script_response); // display response from the PHP script, if any
+
+
+
+
+
+
+                    }
+                });
+            });
+
+
+
+
+
+        });*/
+        $(document).ready(function () {
+            $('#t_upload_header_save').click(function () {
+              $('#progress-bar').css('display','block');
+            });
+
+        });
+
+    </script>
+
+    <!-- Your GOOGLE ANALYTICS CODE Below -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+
+
+    </script>
+
+
+{% endblock %}

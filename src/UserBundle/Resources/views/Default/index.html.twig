@@ -1,0 +1,65 @@
+{% extends "@User/DashboardTemplate.html.twig" %}
+
+{% block nav %}
+{% endblock %}
+{% block maincontent %}
+
+    <div class="padding-10">
+
+        <ul class="nav nav-tabs tabs-pull-right">
+            <li class="active">
+                <a data-toggle="tab">ปีเอกสาร</a>
+            </li>
+
+<!--
+            <li class="pull-left">
+                <span class="margin-top-10 display-inline"><i class="fa fa-rss text-success"></i> Activity</span>
+            </li>
+-->
+        </ul>
+
+        <div class="tab-content padding-top-10">
+
+
+
+                <div class="tab-pane fade in active" id="a1">
+                    {% for entity in years %}
+
+                    <div class="row">
+
+                        <div class="col-xs-5 col-sm-4 col-lg-3">
+                            <center>
+                                <i class="fa fa-folder-open-o fa-4x" aria-hidden="true"></i>
+                                <br>เอกสารประจำปี<strong>{{ entity.docYear }}</strong>
+                            </center>
+                        </div>
+
+                        <div class="col-xs-7 col-sm-8 col-lg-2">
+                            <br><a class="btn btn-info btn-lg btn-block" href="{{ path('view_files',{'id':entity.id})}}" >  view </a>
+                        </div>
+
+
+                    </div>
+                        <div class="col-sm-12">
+
+                            <hr>
+
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+
+                </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

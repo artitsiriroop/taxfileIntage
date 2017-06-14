@@ -1,0 +1,135 @@
+{% extends '::base.html.twig' %}
+{% block stylesheets %}
+
+
+    {% stylesheets   '@AppBundle/Resources/public/css/home.css'  filter='cssrewrite' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{asset_url}}">
+    {% endstylesheets %}
+{% endblock %}
+
+{% block  content %}
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <span class="highlight">Intage Company</span> </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current">
+                        <a> Home</a>
+                    </li>
+                    <li class="current">
+                        <a> About </a>
+                    </li>
+                    <li class="current">
+                        <a> Services</a>
+                    </li>
+                    <li>
+                        <div>
+                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                                <a href="{{ path('fos_user_security_logout') }}">
+                                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                                </a>
+                            {% else %}
+                                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase" background="team.jpg">
+        <div class="container">
+            {% image '@AppBundle/Resources/public/image/team.jpg' %}
+            <img src="{{ asset_url }}" alt="Example" />
+            {% endimage %}
+            <h1> Intage Company</h1>
+            <p>
+
+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+            <h1>  </h1>
+            <div id="form">
+                {% if app.request.hasPreviousSession %}
+
+                    {% for type, messages in app.session.flashbag.all() %}
+
+                        {% for message in messages %}
+
+                            <div class="flash-{{ type }}">
+                                {{ message }}
+                            </div>
+
+                        {% endfor %}
+
+                    {% endfor %}
+                {% endif %}
+
+                <div>
+                    {% block fos_user_content %}
+                    {% endblock fos_user_content %}
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                {% image '@AppBundle/Resources/public/image/images.jpeg' %}
+                <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+                <h3>
+                    Intelligence
+                </h3>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="box">
+                {% image '@AppBundle/Resources/public/image/images.jpeg' %}
+                <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+                <h3>
+                    Innovation
+                </h3>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="box">
+                {% image '@AppBundle/Resources/public/image/images.jpeg' %}
+                <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+                <h3>
+                    Intelligence
+                </h3>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            Intage , Copyright &copy, 2017;
+        </p>
+    </footer>
+
+
+
+{% endblock %}
+{% block javascripts %}
+
+{% endblock %}

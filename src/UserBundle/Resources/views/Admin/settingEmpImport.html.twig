@@ -1,0 +1,173 @@
+{% extends "@User/DashboardTemplate.html.twig" %}
+ {% block maincontent %}
+
+
+     <pre>
+<b><a href="http://sheetjs.com">SheetJS Data Preview Live Demo</a></b>
+(Base64 text works back to IE6; drag and drop works back to IE10)
+
+<a href="https://github.com/SheetJS/js-xlsx">Source Code Repo</a>
+<a href="https://github.com/SheetJS/js-xlsx/issues">Issues?  Something look weird?  Click here and report an issue</a>
+
+</select><br />
+<div id="drop">Drop a spreadsheet file here to see sheet data</div>
+<input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</pre>
+
+
+
+
+
+
+ {% endblock %}
+{% block javascripts %}
+
+    <script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('HTML_Full_Version/js/plugin/pace/pace.min.js') }}"></script>
+
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>#}
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-2.1.1.min.js') }}"><\/script>');
+        }
+    </script>
+
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>#}
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-ui-1.10.3.min.js') }}"><\/script>');
+        }
+    </script>
+    {% javascripts
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/smart-chat-ui/smart.chat.ui.min.js'
+    '@UserBundle/Resources/public/assets/js/smart-chat-ui/smart.chat.manager.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.cust.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.resize.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.time.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/flot/jquery.flot.tooltip.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    %}
+ <script src= "{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>
+    <script>
+        function handleFile(e) {
+            var result;
+            //Get the files from Upload control
+            var files = e.target.files;
+            var i, f;
+            //Loop through files
+            for (i = 0, f = files[i]; i != files.length; ++i) {
+                var reader = new FileReader();
+                var name = f.name;
+                reader.onload = function (e) {
+                    var data = e.target.result;
+
+
+                    var workbook = XLSX.read(data, { type: 'binary' });
+
+                    var sheet_name_list = workbook.SheetNames;
+                    sheet_name_list.forEach(function (y) { /* iterate through sheets */
+                        //Convert the cell value to Json
+                        var roa = XLSX.utils.sheet_to_json(workbook.Sheets[y]);
+                        if (roa.length > 0) {
+                            result = roa;
+                        }
+                    });
+//                    $('#progress-bar').css('width','50%');
+                    //Get the first column first cell value
+                //alert(JSON.stringify(result.length));
+                    for(var i=0;i<result.length;i++)
+                    {
+                       // alert(JSON.stringify(result[i]["lastname"]));
+                        var sendData=JSON.stringify(result[i]["pid"])+'#'+JSON.stringify(result[i]["firstname"])+'#'+JSON.stringify(result[i]["lastname"]);
+
+                        $.ajax({
+                            type: "POST",
+                            url: "{{ path('admin_emp_import_excel_respond') }}",
+                            data:sendData,
+                            contentType: "application/json; charset=utf-8",
+                            success: function (data, dataType) {
+                              //  alert('success');
+                            },
+
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                               // alert('Error : '+JSON.stringify(XMLHttpRequest)+'/'+textStatus+'/'+ errorThrown);
+                            }
+                        });
+
+                    }
+
+
+
+
+                };
+                reader.readAsArrayBuffer(f);
+            }
+
+
+
+
+
+        }
+
+        //Change event to dropdownlist
+        $(document).ready(function(){
+            $('#xlf').change(handleFile);
+        });
+    </script>
+
+ <script type="text/javascript">
+     $(document).ready(function() {
+
+
+
+
+     });
+
+
+ </script>
+
+ <!-- Your GOOGLE ANALYTICS CODE Below -->
+ <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+         var ga = document.createElement('script');
+         ga.type = 'text/javascript';
+         ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(ga, s);
+     })();
+ </script>
+
+
+{% endblock %}

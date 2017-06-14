@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content=" Intage Web Design">
+        <meta name="keywords" content="Intage">
+        <meta name="author" content="artit siriroop">
+        <title>{% block title %} {% endblock %}</title>
+        {% block stylesheets %}
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block body %}
+            {% block content %}
+
+            {% endblock %}
+
+
+        {% endblock %}
+        {% block javascripts %}
+
+
+
+        {% endblock %}
+    </body>
+</html>
