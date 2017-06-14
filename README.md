@@ -8,6 +8,8 @@ For details on how to download and get started with Symfony, see the
 Installation ?
 --------------
 
+  * [**Ftp aws**][7]
+
 The Symfony Standard Edition is configured with the following defaults:
 
   * An AppBundle you can use to start coding;
@@ -66,3 +68,4 @@ Enjoy!
 [11]: https://symfony.com/doc/3.2/logging.html
 [12]: https://symfony.com/doc/3.2/assetic/asset_management.html
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+[14]: https://silicondales.com/tutorials/aws-ec2-tutorials/setup-ftp-sftp-aws-ec2-instance/
