@@ -16,6 +16,7 @@ Installation ?
   * [**Ftp  permission denied**][16]
   
   The Php7 is configured with the following description:
+  
       # Remove current php & apache
       sudo service httpd stop
       sudo yum remove httpd* php* 
