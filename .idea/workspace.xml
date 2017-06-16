@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,23 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SettingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="338" column="58" lean-forward="false" selection-start-line="338" selection-start-column="58" selection-end-line="338" selection-end-column="58" />
+            <state relative-caret-position="-216">
+              <caret line="471" column="16" lean-forward="false" selection-start-line="471" selection-start-column="12" selection-end-line="471" selection-end-column="16" />
               <folding>
                 <element signature="e#124#156#0#PHP" expanded="true" />
                 <element signature="e#955#1219#0#PHP" expanded="false" />
                 <element signature="e#1224#1717#0#PHP" expanded="false" />
                 <element signature="e#1722#8733#0#PHP" expanded="false" />
-                <element signature="e#16755#17745#0#PHP" expanded="false" />
-                <element signature="e#17750#18133#0#PHP" expanded="false" />
-                <element signature="e#20887#21407#0#PHP" expanded="false" />
-                <element signature="e#21413#21490#0#PHP" expanded="false" />
-                <element signature="e#21498#22482#0#PHP" expanded="false" />
-                <element signature="e#22488#22774#0#PHP" expanded="false" />
-                <marker date="1497597949393" expanded="true" signature="21771:21822" ph="SELECT dt.zi... AppBundle" />
+                <element signature="e#8738#16831#0#PHP" expanded="false" />
+                <element signature="e#16836#17826#0#PHP" expanded="false" />
+                <element signature="e#20968#21488#0#PHP" expanded="false" />
+                <element signature="e#21494#21571#0#PHP" expanded="false" />
+                <element signature="e#21579#22563#0#PHP" expanded="false" />
+                <element signature="e#22569#22855#0#PHP" expanded="false" />
+                <marker date="1497599505554" expanded="true" signature="21852:21903" ph="SELECT dt.zi... AppBundle" />
               </folding>
             </state>
           </provider>
@@ -106,12 +107,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <first_editor relative-caret-position="225">
+                <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -152,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calen</find>
       <find>submitBtn</find>
       <find>prog</find>
       <find>form_enctype</find>
@@ -161,7 +161,6 @@
       <find>$request</find>
       <find>addressAuto</find>
       <find>creat</find>
-      <find>$task</find>
       <find>$cpnCode</find>
       <find>m_employee</find>
       <find>onoffswitch</find>
@@ -182,6 +181,8 @@
       <find>$isEnable</find>
       <find>infoTa</find>
       <find>info</find>
+      <find>getPassword</find>
+      <find>$task</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,10 +238,10 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -704,15 +705,15 @@
       <workItem from="1497408252958" duration="8472000" />
       <workItem from="1497457297721" duration="3480000" />
       <workItem from="1497508461926" duration="1997000" />
-      <workItem from="1497582500763" duration="2732000" />
+      <workItem from="1497582500763" duration="4814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="908984000" />
+    <option name="totallyTimeSpent" value="911066000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34198472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1081,17 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1105,6 +1095,36 @@
         <state relative-caret-position="221">
           <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="61" column="53" lean-forward="false" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <folding>
+            <element signature="e#2642#8723#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="471" column="16" lean-forward="false" selection-start-line="471" selection-start-column="12" selection-end-line="471" selection-end-column="16" />
+          <folding>
+            <element signature="e#124#156#0#PHP" expanded="true" />
+            <element signature="e#955#1219#0#PHP" expanded="false" />
+            <element signature="e#1224#1717#0#PHP" expanded="false" />
+            <element signature="e#1722#8733#0#PHP" expanded="false" />
+            <element signature="e#8738#16831#0#PHP" expanded="false" />
+            <element signature="e#16836#17826#0#PHP" expanded="false" />
+            <element signature="e#20968#21488#0#PHP" expanded="false" />
+            <element signature="e#21494#21571#0#PHP" expanded="false" />
+            <element signature="e#21579#22563#0#PHP" expanded="false" />
+            <element signature="e#22569#22855#0#PHP" expanded="false" />
+            <marker date="1497599505554" expanded="true" signature="21852:21903" ph="SELECT dt.zi... AppBundle" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,33 +1144,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="61" column="53" lean-forward="false" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-          <folding>
-            <element signature="e#2642#8723#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="338" column="58" lean-forward="false" selection-start-line="338" selection-start-column="58" selection-end-line="338" selection-end-column="58" />
-          <folding>
-            <element signature="e#124#156#0#PHP" expanded="true" />
-            <element signature="e#955#1219#0#PHP" expanded="false" />
-            <element signature="e#1224#1717#0#PHP" expanded="false" />
-            <element signature="e#1722#8733#0#PHP" expanded="false" />
-            <element signature="e#16755#17745#0#PHP" expanded="false" />
-            <element signature="e#17750#18133#0#PHP" expanded="false" />
-            <element signature="e#20887#21407#0#PHP" expanded="false" />
-            <element signature="e#21413#21490#0#PHP" expanded="false" />
-            <element signature="e#21498#22482#0#PHP" expanded="false" />
-            <element signature="e#22488#22774#0#PHP" expanded="false" />
-            <marker date="1497597949393" expanded="true" signature="21771:21822" ph="SELECT dt.zi... AppBundle" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -15,6 +15,44 @@ Installation ?
   * [**Ftp Client**][15]
   * [**Ftp  permission denied**][16]
   
+  The Php7 is configured with the following description:
+      # Remove current php & apache
+      sudo service httpd stop
+      sudo yum remove httpd* php* 
+      
+      # Remove any third party repos that aren't relevant
+      sudo yum repolist
+      sudo yum remove remi-safe
+      
+      # Install Standard Apache for Amazon AMI
+      sudo yum install httpd   #specify http22 if you get a different version
+      
+      # Download webtatic
+      mkdir -p /tmp/php7
+      cd /tmp/php7
+      wget https://mirror.webtatic.com/yum/el6/latest.rpm
+      
+      # Install webtatic repo
+      sudo yum install latest.rpm
+      sudo vi /etc/yum.repos.d/webtatic.repo  'set repo enables
+      sudo yum clean all
+      
+      # Install base php7
+      sudo yum install --enablerepo=webtatic php70w
+      php -v   #Should say something like  PHP 7.0.2 (cli) (built: Jan  9 2016 16:09:32) ( NTS )
+      sudo yum install php70w-opcache
+      sudo yum install php70w-xml
+      sudo yum install php70w-pdo
+      sudo yum install php70w-mysqlnd
+      sudo yum install php70w-gd
+      sudo yum install php70w-apcu
+      sudo yum install php70w-pecl-apcu
+      sudo yum install php70w-mbstring
+      sudo yum install php70w-imap
+      
+      # Restart apache
+      sudo service httpd restart
+  
 
 The Symfony Standard Edition is configured with the following defaults:
 

@@ -327,6 +327,8 @@ class SettingController extends Controller
                 $telNo =   $form->get('telephoneNo')->getData();
                 $pass=$form->get('password')->getData();
 
+                //$password = $encoder->encodePassword('123', $fos->getSalt());
+
 
 
                 $factory = $this->get('security.encoder_factory');
