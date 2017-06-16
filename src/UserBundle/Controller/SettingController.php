@@ -325,6 +325,7 @@ class SettingController extends Controller
                 $email=$form->get('email')->getData();
                 $isEnable=$form->get('enabled')->getData();
                 $telNo =   $form->get('telephoneNo')->getData();
+                $pass=$form->get('password')->getData();
 
 
 
@@ -335,7 +336,7 @@ class SettingController extends Controller
 
                 $task->setEmailCanonical(strtolower($form->get('email')->getData()));
                 $encoder = $factory->getEncoder($task);
-                $password = $encoder->encodePassword($task->getPassword(), $task->getSalt());
+                $password = $encoder->encodePassword($pass, $task->getSalt());
                 $task->setPassword($password);
                 $task->setCpnCode($cpnCode);
                 if($isEnable==1)
