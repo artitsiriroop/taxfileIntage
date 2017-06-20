@@ -134,11 +134,11 @@
       <file leaf-file-name="settingUploadFileController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+            <state relative-caret-position="-269">
+              <caret line="219" column="59" lean-forward="false" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
               <folding>
-                <element signature="e#10750#12068#0#PHP" expanded="false" />
-                <element signature="e#12073#12733#0#PHP" expanded="false" />
+                <element signature="e#10736#12054#0#PHP" expanded="false" />
+                <element signature="e#12059#12719#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -801,12 +801,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="3002000" />
+      <workItem from="1497955966255" duration="3893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="935902000" />
+    <option name="totallyTimeSpent" value="936793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1287,11 +1287,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+        <state relative-caret-position="-269">
+          <caret line="219" column="59" lean-forward="false" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
           <folding>
-            <element signature="e#10750#12068#0#PHP" expanded="false" />
-            <element signature="e#12073#12733#0#PHP" expanded="false" />
+            <element signature="e#10736#12054#0#PHP" expanded="false" />
+            <element signature="e#12059#12719#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -240,8 +240,7 @@ class settingUploadFileController extends  Controller
                                // $T_UploadDetail->setPdfDocDate($docCreateDate);
                                 $em->persist($T_UploadDetail);
                                 //$em->flush();
-                                $tUploadDocDetail->setSumItems($invpdf);
-                                $em->persist($tUploadDocDetail);
+
                                 $em->flush();
 
                             }
@@ -251,6 +250,9 @@ class settingUploadFileController extends  Controller
 
 
                         }
+
+                        $tUploadDocDetail->setSumItems($invpdf);
+                        $em->persist($tUploadDocDetail);
 
                        // rename($files[$j],$username);
 
