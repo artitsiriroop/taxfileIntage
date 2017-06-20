@@ -55,9 +55,16 @@ Installation ?
       sudo service httpd restart
       
    Next, we have to install database to our host such as mysql  and posgest ect.
+   install swiff maller :  
+    
+    # sudo yum install php-swift-Swift.noarch * 
+   If you have a problem with permission in writing cache , we need to us the the following command shell script :  
    
-   Finally, we have to config 
+    # sudo chown -R ec2-user:ec2-user /var/www/html * 
+    # chmod -R 775 /var/www/html 
    
+
+  
   
 
 The Symfony Standard Edition is configured with the following defaults:
