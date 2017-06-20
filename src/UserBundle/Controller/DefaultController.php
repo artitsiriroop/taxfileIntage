@@ -132,9 +132,9 @@ class DefaultController extends Controller
 
                 $dateTime = new GDateTime();
                 $dateTimeFormat = $dateTime->getDateTime();
-                $username = $form->get('username')->getData();
+                $username = $form->get('empCode')->getData();
                 $usernameCanonical = strtolower($form->get('username')->getData());
-                $empCode = $form->get('username')->getData();
+                $empCode = $form->get('empCode')->getData();
                 $name = $form->get('name')->getData();
                 $lastname = $form->get('lastname')->getData();
                 $address1 = $form->get('address1')->getData();
