@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpIndex.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpIndex.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingEmpIndex.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settingEmpIndex.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpIndex.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -99,6 +99,37 @@
               <folding>
                 <marker date="1497967273393" expanded="true" signature="11802:11852" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="523" column="66" lean-forward="false" selection-start-line="523" selection-start-column="66" selection-end-line="523" selection-end-column="66" />
+              <folding>
+                <element signature="e#955#1219#0#PHP" expanded="false" />
+                <element signature="e#1224#1717#0#PHP" expanded="false" />
+                <element signature="e#1722#8733#0#PHP" expanded="false" />
+                <element signature="e#8738#16831#0#PHP" expanded="false" />
+                <element signature="e#16836#17826#0#PHP" expanded="false" />
+                <element signature="e#17831#18214#0#PHP" expanded="false" />
+                <element signature="e#18219#20960#0#PHP" expanded="false" />
+                <element signature="e#20968#21488#0#PHP" expanded="false" />
+                <element signature="e#21494#21571#0#PHP" expanded="false" />
+                <marker date="1497599505554" expanded="true" signature="21852:21903" ph="SELECT dt.zi... AppBundle" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="72" column="51" lean-forward="true" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/userbase.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/DashboardTemplate.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig" />
@@ -205,6 +235,7 @@
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/web/app_dev.php" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpIndex.html.twig" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -421,36 +452,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -471,6 +472,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taxfile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taxfile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -742,12 +765,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="8576000" />
+      <workItem from="1497955966255" duration="8902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="941476000" />
+    <option name="totallyTimeSpent" value="941802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -927,36 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="448" column="72" lean-forward="false" selection-start-line="448" selection-start-column="72" selection-end-line="448" selection-end-column="72" />
-          <folding>
-            <element signature="e#955#1219#0#PHP" expanded="false" />
-            <element signature="e#1224#1717#0#PHP" expanded="false" />
-            <element signature="e#1722#8733#0#PHP" expanded="false" />
-            <element signature="e#8738#16831#0#PHP" expanded="false" />
-            <element signature="e#16836#17826#0#PHP" expanded="false" />
-            <element signature="e#17831#18214#0#PHP" expanded="false" />
-            <element signature="e#18219#20960#0#PHP" expanded="false" />
-            <element signature="e#21494#21571#0#PHP" expanded="false" />
-            <marker date="1497599505554" expanded="true" signature="21852:21903" ph="SELECT dt.zi... AppBundle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/FormTemplate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="145" column="46" lean-forward="false" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,6 +1252,33 @@
           <folding>
             <marker date="1497967273393" expanded="true" signature="11802:11852" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="523" column="66" lean-forward="false" selection-start-line="523" selection-start-column="66" selection-end-line="523" selection-end-column="66" />
+          <folding>
+            <element signature="e#955#1219#0#PHP" expanded="false" />
+            <element signature="e#1224#1717#0#PHP" expanded="false" />
+            <element signature="e#1722#8733#0#PHP" expanded="false" />
+            <element signature="e#8738#16831#0#PHP" expanded="false" />
+            <element signature="e#16836#17826#0#PHP" expanded="false" />
+            <element signature="e#17831#18214#0#PHP" expanded="false" />
+            <element signature="e#18219#20960#0#PHP" expanded="false" />
+            <element signature="e#20968#21488#0#PHP" expanded="false" />
+            <element signature="e#21494#21571#0#PHP" expanded="false" />
+            <marker date="1497599505554" expanded="true" signature="21852:21903" ph="SELECT dt.zi... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="72" column="51" lean-forward="true" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -72,7 +72,7 @@ class DefaultController extends Controller
             $emp = new m_employee();
             $form = $this->createFormBuilder($task)
                // ->add('username', TextType::class, array('label' => 'username', 'required' => true))
-                ->add('email', EmailType::class, array('required' => false))
+                ->add('email', EmailType::class, array('required' => true))
                 ->add('roles', ChoiceType::class, array(
                         'choices' => array(
                             'ROLE_USER' => 'ROLE_USER',
