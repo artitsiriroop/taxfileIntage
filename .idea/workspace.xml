@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" line="66" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="" />
+    <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +31,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DashboardTemplate.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/DashboardTemplate.html.twig">
+      <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6137">
-              <caret line="361" column="55" lean-forward="false" selection-start-line="361" selection-start-column="55" selection-end-line="363" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="217">
+              <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
+              <folding>
+                <marker date="1497963376098" expanded="false" signature="4970:4992" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingUploadFileController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settingUploadFileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="71">
@@ -234,7 +238,6 @@
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmp.html.twig" />
@@ -244,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" />
       </list>
     </option>
   </component>
@@ -470,60 +474,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxfile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -799,12 +749,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="4897000" />
+      <workItem from="1497955966255" duration="5186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="937797000" />
+    <option name="totallyTimeSpent" value="938086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1191,16 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="160" column="56" lean-forward="false" selection-start-line="160" selection-start-column="56" selection-end-line="160" selection-end-column="56" />
-          <folding>
-            <marker date="1497949913865" expanded="false" signature="4970:4992" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/DashboardTemplate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6137">
@@ -1290,6 +1230,16 @@
           <folding>
             <element signature="e#10733#12051#0#PHP" expanded="false" />
             <element signature="e#12056#12716#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
+          <folding>
+            <marker date="1497963376098" expanded="false" signature="4970:4992" ph="..." />
           </folding>
         </state>
       </provider>
