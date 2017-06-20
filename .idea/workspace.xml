@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +44,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="131" column="47" lean-forward="false" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="47" />
+            <state relative-caret-position="207">
+              <caret line="145" column="46" lean-forward="true" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -85,7 +84,7 @@
       <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="-661">
               <caret line="68" column="80" lean-forward="false" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="83" />
               <folding>
                 <element signature="e#2314#2344#0#HTML" expanded="true" />
@@ -118,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$cpnCode</find>
       <find>m_employee</find>
       <find>onoffswitch</find>
       <find>onoffswitch-checkbox</find>
@@ -146,8 +144,9 @@
       <find>footer</find>
       <find>$task</find>
       <find>Last account activit</find>
-      <find>user</find>
       <find>sunn</find>
+      <find>$username</find>
+      <find>user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -611,12 +610,12 @@
       <workItem from="1497582500763" duration="6307000" />
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
-      <workItem from="1497928035542" duration="11726000" />
+      <workItem from="1497928035542" duration="13119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="925635000" />
+    <option name="totallyTimeSpent" value="927028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1096,17 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="68" column="80" lean-forward="false" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="83" />
-          <folding>
-            <element signature="e#2314#2344#0#HTML" expanded="true" />
-            <marker date="1497939972280" expanded="false" signature="4970:4992" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1115,10 +1103,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-661">
+          <caret line="68" column="80" lean-forward="false" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="83" />
+          <folding>
+            <element signature="e#2314#2344#0#HTML" expanded="true" />
+            <marker date="1497939972280" expanded="false" signature="4970:4992" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="131" column="47" lean-forward="false" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="47" />
+        <state relative-caret-position="207">
+          <caret line="145" column="46" lean-forward="true" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
           <folding />
         </state>
       </provider>

@@ -143,6 +143,7 @@ class DefaultController extends Controller
                 $telNo =   $form->get('telephoneNo')->getData();
                 $factory = $this->get('security.encoder_factory');
                 // $cpnCode=$form->get('cpnCode')->getData();
+                $task->setUsername($username);
                 $task->setUsernameCanonical(strtolower($form->get('empCode')->getData()));
                 $task->setEmailCanonical(strtolower($form->get('email')->getData()));
 
