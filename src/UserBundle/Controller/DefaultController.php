@@ -126,14 +126,11 @@ class DefaultController extends Controller
             if ('POST' === $request->getMethod() && $form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
                 $em->getConnection()->beginTransaction();
-
                 //  try{
-
-
                 $dateTime = new GDateTime();
                 $dateTimeFormat = $dateTime->getDateTime();
                 $username = $form->get('empCode')->getData();
-                $usernameCanonical = strtolower($form->get('username')->getData());
+                $usernameCanonical = strtolower($form->get('empCode')->getData());
                 $empCode = $form->get('empCode')->getData();
                 $name = $form->get('name')->getData();
                 $lastname = $form->get('lastname')->getData();
@@ -146,7 +143,7 @@ class DefaultController extends Controller
                 $telNo =   $form->get('telephoneNo')->getData();
                 $factory = $this->get('security.encoder_factory');
                 // $cpnCode=$form->get('cpnCode')->getData();
-                $task->setUsernameCanonical(strtolower($form->get('username')->getData()));
+                $task->setUsernameCanonical(strtolower($form->get('empCode')->getData()));
                 $task->setEmailCanonical(strtolower($form->get('email')->getData()));
 
                 $encoder = $factory->getEncoder($task);
