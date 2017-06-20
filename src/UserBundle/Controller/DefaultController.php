@@ -71,7 +71,7 @@ class DefaultController extends Controller
             $task = new User();
             $emp = new m_employee();
             $form = $this->createFormBuilder($task)
-                ->add('username', TextType::class, array('label' => 'username', 'required' => true))
+               // ->add('username', TextType::class, array('label' => 'username', 'required' => true))
                 ->add('email', EmailType::class, array('required' => false))
                 ->add('roles', ChoiceType::class, array(
                         'choices' => array(
@@ -134,7 +134,7 @@ class DefaultController extends Controller
                 $dateTimeFormat = $dateTime->getDateTime();
                 $username = $form->get('username')->getData();
                 $usernameCanonical = strtolower($form->get('username')->getData());
-                $empCode = $form->get('empCode')->getData();
+                $empCode = $form->get('username')->getData();
                 $name = $form->get('name')->getData();
                 $lastname = $form->get('lastname')->getData();
                 $address1 = $form->get('address1')->getData();
