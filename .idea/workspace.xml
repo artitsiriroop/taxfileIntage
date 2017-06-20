@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,11 +134,11 @@
       <file leaf-file-name="settingUploadFileController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="242" column="70" lean-forward="false" selection-start-line="242" selection-start-column="70" selection-end-line="242" selection-end-column="70" />
+            <state relative-caret-position="421">
+              <caret line="253" column="37" lean-forward="false" selection-start-line="253" selection-start-column="37" selection-end-line="253" selection-end-column="37" />
               <folding>
-                <element signature="e#10744#12062#0#PHP" expanded="false" />
-                <element signature="e#12067#12727#0#PHP" expanded="false" />
+                <element signature="e#10721#12039#0#PHP" expanded="false" />
+                <element signature="e#12044#12704#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -802,12 +801,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="2317000" />
+      <workItem from="1497955966255" duration="2415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="935217000" />
+    <option name="totallyTimeSpent" value="935315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1288,11 +1287,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="242" column="70" lean-forward="false" selection-start-line="242" selection-start-column="70" selection-end-line="242" selection-end-column="70" />
+        <state relative-caret-position="421">
+          <caret line="253" column="37" lean-forward="false" selection-start-line="253" selection-start-column="37" selection-end-line="253" selection-end-column="37" />
           <folding>
-            <element signature="e#10744#12062#0#PHP" expanded="false" />
-            <element signature="e#12067#12727#0#PHP" expanded="false" />
+            <element signature="e#10721#12039#0#PHP" expanded="false" />
+            <element signature="e#12044#12704#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
