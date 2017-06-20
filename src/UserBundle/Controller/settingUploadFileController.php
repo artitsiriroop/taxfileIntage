@@ -216,6 +216,7 @@ class settingUploadFileController extends  Controller
                         //$em->persist($tUploadDocDetail);
                         //$em->flush();
                         //$upload->setSumItems(count($pdfs));
+                        $invpdf=0;
 
                         for($k = 2; $k<count($pdfs); $k++){
 
@@ -223,7 +224,7 @@ class settingUploadFileController extends  Controller
                             $docDisplayName=$docDisplayName.'.pdf';
 
                             $ext = pathinfo($pdfs[$k], PATHINFO_EXTENSION);
-                            $invpdf=0;
+
                             if($ext=='pdf')
                             {
                                 $invpdf++;
