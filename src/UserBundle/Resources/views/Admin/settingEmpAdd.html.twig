@@ -510,8 +510,8 @@
                 }
             });
             $('#isEmpCode').click(function () {
-                if($('#isEmpCode').is(":checked")){
-                    $(this).closest('input').val($('#form_empCode').val());
+                if($('#isEmpCode').prop('checked')){
+                    $('#form_username').val($('#form_empCode').val());
                 }
 
             })

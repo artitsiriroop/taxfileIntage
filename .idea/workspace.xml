@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="513" column="75" lean-forward="false" selection-start-line="513" selection-start-column="75" selection-end-line="513" selection-end-column="75" />
+              <caret line="513" column="39" lean-forward="false" selection-start-line="513" selection-start-column="39" selection-end-line="513" selection-end-column="39" />
               <folding>
                 <element signature="e#7037#7067#0#HTML" expanded="true" />
                 <element signature="e#23307#24611#0#HTML" expanded="false" />
@@ -912,12 +912,12 @@
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
       <workItem from="1497955966255" duration="11404000" />
-      <workItem from="1497981483837" duration="1316000" />
+      <workItem from="1497981483837" duration="1487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="945620000" />
+    <option name="totallyTimeSpent" value="945791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1391,7 +1391,7 @@
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="513" column="75" lean-forward="false" selection-start-line="513" selection-start-column="75" selection-end-line="513" selection-end-column="75" />
+          <caret line="513" column="39" lean-forward="false" selection-start-line="513" selection-start-column="39" selection-end-line="513" selection-end-column="39" />
           <folding>
             <element signature="e#7037#7067#0#HTML" expanded="true" />
             <element signature="e#23307#24611#0#HTML" expanded="false" />
