@@ -142,8 +142,8 @@
 
                                              <div class="row">
                                                  <section class="col col-1">
-                                                     <label >
-                                                         username <span style="color: red;float: left">*</span>
+                                                     <label>
+                                                        <span style="font-size: small">username</span>  <span style="color: red;float: left">*</span>
                                                      </label>
 
                                                  </section>
@@ -512,6 +512,9 @@
             $('#isEmpCode').click(function () {
                 if($('#isEmpCode').prop('checked')){
                     $('#form_username').val($('#form_empCode').val());
+                }else{
+                    $('#form_username').val('');
+
                 }
 
             })
