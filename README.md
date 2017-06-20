@@ -55,7 +55,7 @@ Installation ?
       sudo service httpd restart
       
    Next, we have to install database to our host such as mysql  and posgest ect.
-   install swiff maller :  
+   install swiffmaller :  
     
     # sudo yum install php-swift-Swift.noarch * 
    If you have a problem with permission in writing cache , we need to us the the following command shell scripts :  
