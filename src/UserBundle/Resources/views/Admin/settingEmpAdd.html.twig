@@ -143,7 +143,6 @@
                                              <div class="row">
                                                  <section class="col col-1">
                                                      <label >
-
                                                          username <span style="color: red;float: left">*</span>
                                                      </label>
 
@@ -510,6 +509,13 @@
                     $('#form_zipCode').val(zipcode);
                 }
             });
+            $('#isEmpCode').click(function () {
+                if($('#isEmpCode').is(":checked")){
+                    $(this).closest('input').val($('#form_empCode').val());
+                }
+
+            })
+
 
 
 
