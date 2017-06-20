@@ -212,7 +212,7 @@ class settingUploadFileController extends  Controller
                         $tUploadDocDetail->setUserName($username);
                         $tUploadDocDetail->setDocCode($currDocCode);
                         $tUploadDocDetail->setCpnCode($cpnCode);
-                        $tUploadDocDetail->setSumItems(count($pdfs)-1);
+                        $tUploadDocDetail->setSumItems(count($pdfs)-3);
                         $em->persist($tUploadDocDetail);
                         $em->flush();
                         //$upload->setSumItems(count($pdfs));
