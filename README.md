@@ -53,6 +53,11 @@ Installation ?
       
       # Restart apache
       sudo service httpd restart
+      
+   Next, we have to install database to our host such as mysql  and posgest ect.
+   
+   Finally, we have to config 
+   
   
 
 The Symfony Standard Edition is configured with the following defaults:
