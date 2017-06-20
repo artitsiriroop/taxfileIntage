@@ -85,7 +85,7 @@ class SettingController extends Controller
             ->add('enabled', ChoiceType::class, array(
                 'choices'  => array(
                     'Yes' => 1,
-                    'No' => 0,
+//                    'No' => 0,
 
                     )
                )
