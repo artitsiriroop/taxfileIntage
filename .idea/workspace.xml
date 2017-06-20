@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" line="66" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" />
-    </list>
+    <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -801,12 +799,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="4301000" />
+      <workItem from="1497955966255" duration="4897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="937201000" />
+    <option name="totallyTimeSpent" value="937797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
