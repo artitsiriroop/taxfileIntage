@@ -58,7 +58,7 @@ Installation ?
    install swiff maller :  
     
     # sudo yum install php-swift-Swift.noarch * 
-   If you have a problem with permission in writing cache , we need to us the the following command shell script :  
+   If you have a problem with permission in writing cache , we need to us the the following command shell scripts :  
    
     # sudo chown -R ec2-user:ec2-user /var/www/html * 
     # chmod -R 775 /var/www/html 
