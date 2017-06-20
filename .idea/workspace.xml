@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFile.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileDocDetail.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileDocDetail.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,16 +49,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6137">
               <caret line="361" column="55" lean-forward="false" selection-start-line="361" selection-start-column="55" selection-end-line="363" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_content.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -133,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingUploadFileIndex.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settingUploadFileIndex.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -141,6 +130,16 @@
               <folding>
                 <marker date="1497956426299" expanded="true" signature="13281:13331" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agreement.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -228,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
@@ -247,6 +245,7 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFile.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileDocDetail.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
       </list>
     </option>
   </component>
@@ -454,7 +453,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
+              <option name="myItemId" value="Default" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,12 +779,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="465000" />
+      <workItem from="1497955966255" duration="1303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="933365000" />
+    <option name="totallyTimeSpent" value="934203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1089,17 +1088,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,6 +1115,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,6 +1123,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,6 +1263,14 @@
           <folding>
             <marker date="1497956426299" expanded="true" signature="13281:13331" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
