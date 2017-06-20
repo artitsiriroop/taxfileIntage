@@ -176,9 +176,10 @@
                                                 <section class="col col-4">
                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
                                                         {{ form_widget(form.telephoneNo,{'attr': {'placeholder': 'telephoneNo'}}) }}
-                                                        {{ form_widget(form.password,{'attr': {'placeholder': 'password','class':'hidden'}}) }}
+
 
                                                     </label>
+
                                                 </section>
 
 
@@ -316,6 +317,8 @@
                                                 Submit
                                             </button>
                                         </footer>
+                                        {{ form_widget(form.password,{'attr': {'placeholder': 'password','class':'hidden'}}) }}
+
 
 
 

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +32,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="357" column="91" lean-forward="true" selection-start-line="357" selection-start-column="91" selection-end-line="357" selection-end-column="91" />
+            <state relative-caret-position="721">
+              <caret line="319" column="127" lean-forward="false" selection-start-line="319" selection-start-column="127" selection-end-line="319" selection-end-column="127" />
               <folding>
-                <marker date="1497968021671" expanded="false" signature="4970:4992" ph="..." />
+                <marker date="1497968629385" expanded="false" signature="4970:4992" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agreement.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="115" column="86" lean-forward="true" selection-start-line="115" selection-start-column="86" selection-end-line="115" selection-end-column="86" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,7 +67,7 @@
       <file leaf-file-name="settingEmpAdd.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6760">
+            <state relative-caret-position="-6862">
               <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding />
             </state>
@@ -147,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFile.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileDocDetail.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingUploadFileIndex.html.twig" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web/app.php" />
@@ -155,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpIndex.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
       </list>
     </option>
   </component>
@@ -838,12 +859,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="9312000" />
+      <workItem from="1497955966255" duration="10129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="942212000" />
+    <option name="totallyTimeSpent" value="943029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1120,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1333,29 +1346,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1506">
-          <caret line="72" column="51" lean-forward="true" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+        <state relative-caret-position="-6862">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6760">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="238">
+          <caret line="115" column="86" lean-forward="true" selection-start-line="115" selection-start-column="86" selection-end-line="115" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/registration.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="357" column="91" lean-forward="true" selection-start-line="357" selection-start-column="91" selection-end-line="357" selection-end-column="91" />
+        <state relative-caret-position="721">
+          <caret line="319" column="127" lean-forward="false" selection-start-line="319" selection-start-column="127" selection-end-line="319" selection-end-column="127" />
           <folding>
-            <marker date="1497968021671" expanded="false" signature="4970:4992" ph="..." />
+            <marker date="1497968629385" expanded="false" signature="4970:4992" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
