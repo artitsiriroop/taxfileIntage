@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,10 +56,10 @@
       <file leaf-file-name="settingEmpAdd.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="57" selection-end-line="156" selection-end-column="66" />
+            <state relative-caret-position="51">
+              <caret line="159" column="74" lean-forward="false" selection-start-line="159" selection-start-column="74" selection-end-line="159" selection-end-column="74" />
               <folding>
-                <element signature="e#7048#7078#0#HTML" expanded="true" />
+                <element signature="e#7038#7068#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -816,15 +815,15 @@
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
       <workItem from="1497955966255" duration="11404000" />
-      <workItem from="1497981483837" duration="389000" />
+      <workItem from="1497981483837" duration="830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="944693000" />
+    <option name="totallyTimeSpent" value="945134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3167939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1293,10 +1292,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="57" selection-end-line="156" selection-end-column="66" />
+        <state relative-caret-position="51">
+          <caret line="159" column="74" lean-forward="false" selection-start-line="159" selection-start-column="74" selection-end-line="159" selection-end-column="74" />
           <folding>
-            <element signature="e#7048#7078#0#HTML" expanded="true" />
+            <element signature="e#7038#7068#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
