@@ -212,7 +212,7 @@ class settingUploadFileController extends  Controller
                         $tUploadDocDetail->setUserName($username);
                         $tUploadDocDetail->setDocCode($currDocCode);
                         $tUploadDocDetail->setCpnCode($cpnCode);
-                        $tUploadDocDetail->setSumItems(count($pdfs)-2);
+                       // $tUploadDocDetail->setSumItems(count($pdfs)-2);
                         $em->persist($tUploadDocDetail);
                         $em->flush();
                         //$upload->setSumItems(count($pdfs));
@@ -223,6 +223,7 @@ class settingUploadFileController extends  Controller
                             $docDisplayName=$docDisplayName.'.pdf';
 
                             $ext = pathinfo($pdfs[$k], PATHINFO_EXTENSION);
+                            $invpdf=0;
                             if($ext=='pdf')
                             {
 
@@ -235,8 +236,12 @@ class settingUploadFileController extends  Controller
                                 $T_UploadDetail->setUploadLocation($pdfPath);
                                 $T_UploadDetail->setFilName($docDisplayName);
                                 $countPdfS++;
+                                $invpdf++;
                                // $T_UploadDetail->setPdfDocDate($docCreateDate);
                                 $em->persist($T_UploadDetail);
+                                $em->flush();
+                                $tUploadDocDetail->setSumItems($invpdf);
+                                $em->persist($tUploadDocDetail);
                                 $em->flush();
 
                             }
