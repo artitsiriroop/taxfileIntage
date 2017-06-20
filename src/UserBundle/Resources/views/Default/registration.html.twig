@@ -62,11 +62,11 @@
                                                        รหัสบัตรประชาชน  <span style="color: red;float: left">*</span>
                                                     </label>
                                                 </section>
-                                                <section class="col col-10">
+                                                <section class="col col-4">
                                                     <label class="input">
                                                         <i class="icon-append fa fa-user"></i>
 
-                                                        {{ form_widget(form.empCode,{'attr': {'placeholder': 'emplpoyee code'}}) }}
+                                                        {{ form_widget(form.empCode,{'attr': {'placeholder': 'รหัสบัตรประชาชน'}}) }}
 
                                                         <!--<input type="text" name="name" placeholder="Name">-->
                                                     </label>
@@ -103,35 +103,23 @@
                                             </div>
 
                                             <div class="row">
-                                                <section class="col col-2">
-                                                    <label >
+                                                {#<section class="col col-2">#}
+                                                    {#<label >#}
 
-                                                        username <span style="color: red;float: left">*</span>
-                                                    </label>
-                                                </section>
-                                                <section class="col col-4">
-                                                    <label class="input">
-                                                        <i class="icon-append fa fa-user"></i>
+                                                        {#username <span style="color: red;float: left">*</span>#}
+                                                    {#</label>#}
+                                                {#</section>#}
+                                                {#<section class="col col-4">#}
+                                                    {#<label class="input">#}
+                                                        {#<i class="icon-append fa fa-user"></i>#}
 
-                                                        {{ form_widget(form.username,{'attr': {'placeholder': 'username'}}) }}
+                                                        {#{{ form_widget(form.username,{'attr': {'placeholder': 'username'}}) }}#}
 
-                                                        <!--<input type="text" name="name" placeholder="Name">-->
-                                                    </label>
-                                                </section>
+                                                        {#<!--<input type="text" name="name" placeholder="Name">-->#}
+                                                    {#</label>#}
+                                                {#</section>#}
 
-                                                <section class="col col-2">
-                                                     <label>
 
-                                                         telephoneNo <span style="color: red;float: left">*</span>
-                                                     </label>
-                                                 </section>
-                                                 <section class="col col-4">
-                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
-                                                         {{ form_widget(form.telephoneNo,{'attr': {'placeholder': 'telephoneNo'}}) }}
-                                                          {{ form_widget(form.password,{'attr': {'placeholder': 'password','class':'hidden'}}) }}
-
-                                                     </label>
-                                                 </section>
                                             </div>
 
 
@@ -139,24 +127,24 @@
                                                 <section class="col col-2">
                                                     <label>
 
-                                                        name <span style="color: red;float: left">*</span>
+                                                        ชื่อ <span style="color: red;float: left">*</span>
                                                     </label>
                                                 </section>
                                                 <section class="col col-4">
                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
-                                                        {{ form_widget(form.name,{'attr': {'placeholder': 'name'}}) }}
+                                                        {{ form_widget(form.name,{'attr': {'placeholder': 'ชื่อ'}}) }}
 
                                                     </label>
                                                 </section>
                                                 <section class="col col-2">
                                                     <label>
 
-                                                        lastname <span style="color: red;float: left">*</span>
+                                                        นามสกุล <span style="color: red;float: left">*</span>
                                                     </label>
                                                 </section>
                                                 <section class="col col-4">
                                                     <label class="input"> <i class="icon-append fa fa-briefcase"></i>
-                                                        {{ form_widget(form.lastname,{'attr': {'placeholder': 'lastname'}}) }}
+                                                        {{ form_widget(form.lastname,{'attr': {'placeholder': 'นามสกุล'}}) }}
 
 
                                                     </label>
@@ -178,8 +166,18 @@
 
                                                     </label>
                                                 </section>
-                                                <section class="col col-6">
+                                                <section class="col col-2">
+                                                    <label>
 
+                                                        หมายเลขโทรศัพท์ <span style="color: red;float: left">*</span>
+                                                    </label>
+                                                </section>
+                                                <section class="col col-4">
+                                                    <label class="input"> <i class="icon-append fa fa-briefcase"></i>
+                                                        {{ form_widget(form.telephoneNo,{'attr': {'placeholder': 'telephoneNo'}}) }}
+                                                        {{ form_widget(form.password,{'attr': {'placeholder': 'password','class':'hidden'}}) }}
+
+                                                    </label>
                                                 </section>
 
 
