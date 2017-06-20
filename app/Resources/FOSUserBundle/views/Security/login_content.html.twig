@@ -13,15 +13,17 @@
             <label class="input">
 
 
-                <label for="username">{{ 'security.login.username'|trans }}</label>
+                {#<label for="username">{{ 'security.login.username'|trans }}</label>#}
+                <label for="username">รหัสบัตรประชาชน</label>
                 <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
-                <b class="tooltip tooltip-top-right"> Please enter email address/username</b></label>
+                <b class="tooltip tooltip-top-right">Enter your ID card number</b></label>
         </section>
 
         <section>
 
             <label class="input">
-                <label for="password">{{ 'security.login.password'|trans }}</label>
+                {#<label for="password">{{ 'security.login.password'|trans }}</label>#}
+                <label for="username">รหัสผ่าน</label>
                 <input type="password" id="password" name="_password" required="required" />
                 <b class="tooltip tooltip-top-right">Enter your password</b> </label>
             <div class="note">
@@ -42,7 +44,7 @@
         </section>-->
     </fieldset>
     <footer>
-        <label class="button" style="margin-right:30%;"> SUBMIT
+        <label class="button" style="margin-right:30%;"> เข้าสู่ระบบ
         <input style="display: none;" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
         </label>
 
