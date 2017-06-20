@@ -56,14 +56,14 @@
       <file leaf-file-name="settingEmpAdd.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="155" column="99" lean-forward="false" selection-start-line="155" selection-start-column="99" selection-end-line="155" selection-end-column="99" />
+            <state relative-caret-position="38">
+              <caret line="145" column="147" lean-forward="false" selection-start-line="145" selection-start-column="147" selection-end-line="145" selection-end-column="147" />
               <folding>
                 <element signature="e#7026#7050#0#HTML" expanded="true" />
                 <element signature="e#7074#7104#0#HTML" expanded="true" />
-                <element signature="e#7637#7661#0#HTML" expanded="true" />
-                <element signature="e#9559#9589#0#HTML" expanded="true" />
-                <element signature="e#23382#24686#0#HTML" expanded="false" />
+                <element signature="e#7648#7675#0#HTML" expanded="true" />
+                <element signature="e#9569#9599#0#HTML" expanded="true" />
+                <element signature="e#23392#24696#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -915,12 +915,12 @@
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
       <workItem from="1497955966255" duration="11404000" />
-      <workItem from="1497981483837" duration="2058000" />
+      <workItem from="1497981483837" duration="2454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="946362000" />
+    <option name="totallyTimeSpent" value="946758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1393,14 +1393,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="155" column="99" lean-forward="false" selection-start-line="155" selection-start-column="99" selection-end-line="155" selection-end-column="99" />
+        <state relative-caret-position="38">
+          <caret line="145" column="147" lean-forward="false" selection-start-line="145" selection-start-column="147" selection-end-line="145" selection-end-column="147" />
           <folding>
             <element signature="e#7026#7050#0#HTML" expanded="true" />
             <element signature="e#7074#7104#0#HTML" expanded="true" />
-            <element signature="e#7637#7661#0#HTML" expanded="true" />
-            <element signature="e#9559#9589#0#HTML" expanded="true" />
-            <element signature="e#23382#24686#0#HTML" expanded="false" />
+            <element signature="e#7648#7675#0#HTML" expanded="true" />
+            <element signature="e#9569#9599#0#HTML" expanded="true" />
+            <element signature="e#23392#24696#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
