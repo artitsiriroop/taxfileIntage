@@ -134,11 +134,11 @@
       <file leaf-file-name="settingUploadFileController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="240" column="70" lean-forward="false" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
+            <state relative-caret-position="-133">
+              <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
               <folding>
-                <element signature="e#10702#12020#0#PHP" expanded="false" />
-                <element signature="e#12025#12685#0#PHP" expanded="false" />
+                <element signature="e#10750#12068#0#PHP" expanded="false" />
+                <element signature="e#12073#12733#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -157,7 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onoffswitch-checkbox</find>
       <find>isActivate</find>
       <find>use Symfony\Component\BrowserKit\Response;</find>
       <find>isA</find>
@@ -187,6 +186,7 @@
       <find>user</find>
       <find>sun</find>
       <find>Hide / Show Column</find>
+      <find>$resultHeader</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -801,12 +801,12 @@
       <workItem from="1497608561089" duration="625000" />
       <workItem from="1497862137851" duration="725000" />
       <workItem from="1497928035542" duration="18991000" />
-      <workItem from="1497955966255" duration="2643000" />
+      <workItem from="1497955966255" duration="3002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="935543000" />
+    <option name="totallyTimeSpent" value="935902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1287,11 +1287,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/settingUploadFileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="240" column="70" lean-forward="false" selection-start-line="240" selection-start-column="70" selection-end-line="240" selection-end-column="70" />
+        <state relative-caret-position="-133">
+          <caret line="215" column="26" lean-forward="false" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
           <folding>
-            <element signature="e#10702#12020#0#PHP" expanded="false" />
-            <element signature="e#12025#12685#0#PHP" expanded="false" />
+            <element signature="e#10750#12068#0#PHP" expanded="false" />
+            <element signature="e#12073#12733#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
