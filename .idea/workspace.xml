@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d7887aa-5d51-425d-9f31-313241272b68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +35,7 @@
       <file leaf-file-name="SettingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="0">
               <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
               <folding>
                 <element signature="e#955#1219#0#PHP" expanded="false" />
@@ -61,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingEmpAdd.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settingEmpAdd.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="229" column="114" lean-forward="false" selection-start-line="229" selection-start-column="114" selection-end-line="229" selection-end-column="114" />
+            <state relative-caret-position="272">
+              <caret line="199" column="65" lean-forward="true" selection-start-line="199" selection-start-column="65" selection-end-line="199" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -74,8 +75,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/HTML_Full_Version/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-867">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settingEmpEdit.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="298" column="115" lean-forward="false" selection-start-line="298" selection-start-column="115" selection-end-line="298" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -154,7 +165,6 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/m_employee.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/email/password_resetting.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
@@ -183,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Default/agreement.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php" />
         <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig" />
       </list>
     </option>
   </component>
@@ -582,7 +593,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InsertGProvince" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ratingStar" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -844,15 +855,15 @@
       <workItem from="1497928035542" duration="18991000" />
       <workItem from="1497955966255" duration="11404000" />
       <workItem from="1497981483837" duration="3620000" />
-      <workItem from="1498011944977" duration="63000" />
+      <workItem from="1498011944977" duration="2668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="947987000" />
+    <option name="totallyTimeSpent" value="950592000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32137406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -945,20 +956,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
@@ -1261,14 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML_Full_Version/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1285,7 +1274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/SettingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="0">
           <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding>
             <element signature="e#955#1219#0#PHP" expanded="false" />
@@ -1309,10 +1298,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML_Full_Version/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpAdd.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="229" column="114" lean-forward="false" selection-start-line="229" selection-start-column="114" selection-end-line="229" selection-end-column="114" />
+        <state relative-caret-position="272">
+          <caret line="199" column="65" lean-forward="true" selection-start-line="199" selection-start-column="65" selection-end-line="199" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/insertdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <marker date="1498014278457" expanded="true" signature="1427:1888" ph="insert into winpanel_qnr.qheader... " />
+            <marker date="1498014278457" expanded="true" signature="2390:2459" ph="select qhead... qheader" />
+            <marker date="1498014278457" expanded="true" signature="3184:3372" ph="insert into winpanel_qnr.qdetail... " />
+            <marker date="1498014278457" expanded="true" signature="3899:3978" ph="select T_RdD... T_RdDaily" />
+            <marker date="1498014278457" expanded="true" signature="5958:6039" ph="update winpa... " />
+            <marker date="1498014278457" expanded="true" signature="6339:6516" ph="insert into winpanel_qnr.T_RdDaily... " />
+            <marker date="1498014278457" expanded="true" signature="6858:6960" ph="update winpa... " />
+            <marker date="1498014278457" expanded="true" signature="7026:7132" ph="update winpa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Admin/settingEmpEdit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="298" column="115" lean-forward="false" selection-start-line="298" selection-start-column="115" selection-end-line="298" selection-end-column="115" />
           <folding />
         </state>
       </provider>
