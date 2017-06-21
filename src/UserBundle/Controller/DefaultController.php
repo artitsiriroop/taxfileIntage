@@ -35,7 +35,7 @@ class DefaultController extends Controller
         $cpnCode =$result->getCpnCode();
         $userName =$result->getUsername();
 
-        $files = $this->getDoctrine()->getRepository("AppBundle:T_UploadDetail")->findBy(array('header'=>$id,'userName'=>$userName));
+        $files = $this->getDoctrine()->getRepository("AppBundle:T_UploadDetail")->findBy(array('header'=>$id,'userName'=>$userName),array('filName'=>'ASC'));
         return $this->render('UserBundle:Default:viewFile.html.twig',array('files'=>$files,'userName'=>$userName));
 
     }
