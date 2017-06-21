@@ -205,9 +205,9 @@ Use search to find needed section.
 
             <!-- search mobile button (this is hidden till mobile view port) -->
             {% block searchMobile %}
-                <div id="search-mobile" class="btn-header transparent pull-right">
-                    <span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
-                </div>
+                {#<div id="search-mobile" class="btn-header transparent pull-right">#}
+                    {#<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>#}
+                {#</div>#}
             {% endblock %}
             <!-- end search mobile button -->
 
@@ -252,7 +252,7 @@ Use search to find needed section.
 						<span>
 							{{ app.user.username }}
 						</span>
-						<i class="fa fa-angle-down"></i>
+						{#<i class="fa fa-angle-down"></i>#}
 					</a>
 
 				</span>
