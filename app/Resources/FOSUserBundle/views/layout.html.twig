@@ -5,15 +5,7 @@
 
     <header id="header">
 
-        <div id="logo-group">
-            <span id="logo" style="width:24px;height: 24px;  position:fixed;top:0;left:0;z-index:100;">
-                 {% image '@UserBundle/Resources/public/assets/images/img/avatars/edit-intage_1024x1024.png' %}
-                <img src="{{ asset_url }}" alt="Example" />
-                {% endimage %}
 
-
-            </span>
-        </div>
         <div class="pull-right">
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
@@ -23,6 +15,16 @@
         {% else %}
            <!-- <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>-->
         {% endif %}
+        </div>
+
+        <div id="logo-group" class="center-block">
+            <span id="logo" style="width:24px;height: 24px;  position:fixed;top:0;left:0;z-index:100;">
+                 {% image '@UserBundle/Resources/public/assets/images/img/avatars/edit-intage_1024x1024.png' %}
+                <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+
+
+            </span>
         </div>
 
 
