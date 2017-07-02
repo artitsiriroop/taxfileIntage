@@ -1,0 +1,88 @@
+{% extends "@User/userExtension.html.twig" %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-12 col-lg-4 col-lg-push-4 col-lg-pull-4">
+
+
+
+        </div>
+        <br>
+    </div>
+    <div class="col-md-12 col-lg-8 col-lg-push-2 col-lg-pull-2" style="overflow-y: scroll;">
+        <center>
+            คุณเลยลงทะเบียนแลัว  <a class="btn btn-default" href="{{ path('fos_user_security_login') }}">กลับสู่หน้า login</a>
+        </center>
+        <div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="row">
+
+
+
+
+
+    </div>
+
+
+    <script data-pace-options='{ "restartOnRequestAfter": true }' src="{{ asset('HTML_Full_Version/js/plugin/pace/pace.min.js') }}"></script>
+
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>#}
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-2.1.1.min.js') }}"><\/script>');
+        }
+    </script>
+
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>#}
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="{{ asset('HTML_Full_Version/js/libs/jquery-ui-1.10.3.min.js') }}"><\/script>');
+        }
+    </script>
+    {% javascripts
+    '@UserBundle/Resources/public/assets/js/app.config.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js'
+    '@UserBundle/Resources/public/assets/js/bootstrap/bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/notification/SmartNotification.min.js'
+    '@UserBundle/Resources/public/assets/js/smartwidgets/jarvis.widget.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/sparkline/jquery.sparkline.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-validate/jquery.validate.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/masked-input/jquery.maskedinput.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/select2/select2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/bootstrap-slider/bootstrap-slider.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/msie-fix/jquery.mb.browser.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fastclick/fastclick.min.js'
+    '@UserBundle/Resources/public/assets/js/demo.min.js'
+    '@UserBundle/Resources/public/assets/js/app.min.js'
+    '@UserBundle/Resources/public/assets/js/speech/voicecommand.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js'
+    '@UserBundle/Resources/public/assets/js/plugin/moment/moment.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/fullcalendar/jquery.fullcalendar.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/jquery.dataTables.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.colVis.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.tableTools.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatables/dataTables.bootstrap.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/datatable-responsive/datatables.responsive.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jquery-form/jquery-form.min.js'
+    '@UserBundle/Resources/public/assets/js/plugin/jQuery-Autocomplete-master/src/jquery.autocomplete.js'
+    '@UserBundle/Resources/public/assets/js/page.js'
+    '@UserBundle/Resources/public/assets/js/form_unit.js'
+    %}
+    <script src= "{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
+
+
+
+
+
+{% endblock %}

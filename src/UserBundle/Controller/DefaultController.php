@@ -132,6 +132,16 @@ class DefaultController extends Controller
                 $username = $form->get('empCode')->getData();
                 $usernameCanonical = strtolower($form->get('empCode')->getData());
                 $empCode = $form->get('empCode')->getData();
+                /*
+                 * check exist empcode
+                 */
+                //$this->getDoctrine()->getRepository("AppBundle:fos_user")->findOneBy(array('empCode' => empCode));
+
+
+
+
+
+
                 $name = $form->get('name')->getData();
                 $lastname = $form->get('lastname')->getData();
                 $address1 = $form->get('address1')->getData();
@@ -152,10 +162,17 @@ class DefaultController extends Controller
                 $password = $encoder->encodePassword($plaintextpass, $task->getSalt());
                 $task->setPassword($password);
                 $task->setCpnCode($cpnCode);
+                $resultHeader = $this->getDoctrine()->getRepository("AppBundle:User")->findOneBy(array('username' => $username));
+                if($resultHeader==null)
+                {
+                    return $this->render('UserBundle:Default:registerHandler.html.twig');
+
+                }
                 $em->persist($task);
                 $em->flush();
                 $fosId = $task->getId();
-                $resultHeader = $this->getDoctrine()->getRepository("AppBundle:User")->findOneBy(array('username' => $username));
+
+
                 $emp->setEmpCode($empCode);
                 $emp->setName($name);
                 $emp->setLastname($lastname);
@@ -168,7 +185,6 @@ class DefaultController extends Controller
                 $emp->setZipCode($zipcode);
                 $emp->setCpnCode($cpnCode);
                 $emp->setTelephoneNo($telNo);
-                // $emp->setFos($resultHeader);
                 $emp->setFos($task);
                 $em->persist($emp);
                 $em->persist($task);
@@ -184,6 +200,11 @@ class DefaultController extends Controller
         }
 
 
+
+    }
+    public  function registerHandler()
+    {
+        return $this->render('UserBundle:Default:registerHandler.html.twig');
 
     }
 }
