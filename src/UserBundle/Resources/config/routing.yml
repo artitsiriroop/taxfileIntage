@@ -10,6 +10,9 @@ register_route:
 download_route:
     path:  /download/{id}
     defaults: { _controller: UserBundle:Default:download }
+already_register:
+    path: /already_register
+    defaults: { _controller: UserBundle:Default:registerHandler }
 
 
 
