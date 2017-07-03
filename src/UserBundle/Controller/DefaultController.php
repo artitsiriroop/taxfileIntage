@@ -13,8 +13,7 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-
-
+use Symfony\Component\Security\Acl\Exception\Exception;
 
 
 class DefaultController extends Controller
@@ -162,13 +161,19 @@ class DefaultController extends Controller
                 $password = $encoder->encodePassword($plaintextpass, $task->getSalt());
                 $task->setPassword($password);
                 $task->setCpnCode($cpnCode);
-                $resultHeader = $this->getDoctrine()->getRepository("AppBundle:User")->findOneBy(array('username' => $username));
-                $id=$resultHeader->getId();
-                if($id!=null)
-                {
-                    return $this->render('UserBundle:Default:registerHandler.html.twig');
+               //                  $this->getDoctrine()->getRepository("AppBundle:G_Subdistrict")
 
-                }
+                    $countHeader = $this->getDoctrine()->getRepository("AppBundle:User")->countUserByUsername($username);
+
+                    if($countHeader!=0)
+                    {                        return $this->render('UserBundle:Default:registerHandler.html.twig');
+                    }
+
+
+
+
+
+
 
 
 

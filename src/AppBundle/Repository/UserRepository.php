@@ -37,6 +37,17 @@ class UserRepository extends  EntityRepository
         return $query;
 
     }
+    public  function countUserByUsername($username)
+    {
+        $em= $this->getEntityManager();
+        $query = $em->createQuery('SELECT COUNT(usr.id)  FROM  AppBundle:User  usr   WHERE usr.username = :username')
+            ->setParameter('username',$username);
+
+        $result =  $query->getSingleScalarResult();
+        return $result;
+
+
+    }
 
     protected  function hookSaveFosUse($form)
     {
