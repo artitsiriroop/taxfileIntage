@@ -163,11 +163,17 @@ class DefaultController extends Controller
                 $task->setPassword($password);
                 $task->setCpnCode($cpnCode);
                 $resultHeader = $this->getDoctrine()->getRepository("AppBundle:User")->findOneBy(array('username' => $username));
-                if($resultHeader==null)
+                $id=$resultHeader->getId();
+                if($id!=null)
                 {
                     return $this->render('UserBundle:Default:registerHandler.html.twig');
 
                 }
+
+
+
+
+
                 $em->persist($task);
                 $em->flush();
                 $fosId = $task->getId();
@@ -196,7 +202,7 @@ class DefaultController extends Controller
             return $this->render('UserBundle:Default:registration.html.twig', array('form' => $form->createView(), "zip" => $zip));
         }catch(\mysqli_sql_exception $e)
         {
-            return $this->render('UserBundle:Default:agreementx.html.twig');
+            return $this->render('UserBundle:Default:registerHandler.html.twig');
         }
 
 
